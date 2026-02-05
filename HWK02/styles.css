@@ -11,15 +11,11 @@
 }
 
 :root {
-    --primary-mid: #092892;
-    --primary-dark: #030E37;
-    --primary-light: #B8C7FF;
-    --secondary-mid: #FE983C;
-    --secondary-dark: #753800;
-    --secondary-light: #FFD6B1;
-    --tertiary-mid: #ED0808;
-    --neutral-black: #111111;
-    --neutral-white: #F7FBFE;
+  --primary-dark: #030e37;
+  --primary-light: #b8c7ff;
+  --secondary-mid: #fe983c;
+  --neutral-black: #111111;
+  --neutral-white: #f7fbfe;
 }
 
 html {
@@ -29,8 +25,8 @@ html {
 }
 
 body {
-  color: var(--neutral-black);/*#0f172a;*/
-  background-color: var(--neutral-white); /*#ffffff;*/
+  color: var(--neutral-black);
+  background-color: var(--neutral-white);
 }
 
 img {
@@ -39,31 +35,38 @@ img {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 /* ===============================
-   UTILITY
+   ACCESSIBILITY
 ================================ */
 
 .skip-to-content {
   position: absolute;
   left: -999px;
-  top: auto;
 }
 
 .skip-to-content:focus {
   left: 1rem;
   top: 1rem;
-  background: var(--neutral-black); /*#000;*/
-  color: var(--neutral-white); /*#fff;*/
+  background: var(--neutral-black);
+  color: var(--neutral-white);
   padding: 0.5rem 1rem;
   z-index: 1000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 /* ===============================
-   BUTTONS & LINKS
+   BUTTONS
 ================================ */
 
 .button {
@@ -71,24 +74,17 @@ a {
   padding: 0.75rem 1.25rem;
   border-radius: 999px;
   font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button.primary {
-  background-color: var(--primary-dark); /*#2563eb;*/
-  color: var(--neutral-white); /*#ffffff;*/
-}
-
-.button.primary:hover {
-  background-color: var(--primary-dark); /*#1d4ed8;*/
-  transform: translateY(-1px);
+  background-color: var(--primary-dark);
+  color: white;
 }
 
 .text-link {
   display: inline-block;
   margin-top: 0.75rem;
-  color: var(--primary-dark); /*#2563eb;*/
-  font-weight: 500;
+  color: white;
 }
 
 /* ===============================
@@ -98,9 +94,8 @@ a {
 header {
   position: sticky;
   top: 0;
-  background-color: var(--neutral-white); /*#ffffff;*/
-  border-bottom: 1px solid var(--neutral-black); /*#e5e7eb;*/
-  z-index: 50;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .nav {
@@ -108,71 +103,42 @@ header {
   margin: 0 auto;
   padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
 }
 
-.nav-left a {
+nav ul {
+  list-style: none;
   display: flex;
+  gap: 1rem;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 700;
-  font-size: 1.125rem;
 }
 
 .nav-left img {
-  height: 32px;      /* adjust as needed: 24–40px is typical */
-  width: auto;
-}
-
-.nav-center {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.nav-center a {
-  font-size: 0.95rem;
-  color: #334155;
-}
-
-.nav-right {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  height: 32px;
 }
 
 /* ===============================
-   HERO
+   HERO (Mobile First)
 ================================ */
 
 .hero {
   background: linear-gradient(90deg, #1e3a8a, #2563eb);
-  color: #ffffff;
+  color: white;
   padding: 4rem 1rem;
 }
 
 .hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+  text-align: center;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.hero-image img {
-  border-radius: 1rem;
-}
-
-.text-link {
-    color: white;
+.hero-image {
+  margin-top: 2rem;
 }
 
 /* ===============================
@@ -191,18 +157,7 @@ header {
 .video-card {
   border: 1px solid #e5e7eb;
   border-radius: 1rem;
-  overflow: hidden;
   padding: 1rem;
-}
-
-.video-card h3 {
-  margin-top: 1rem;
-  font-size: 1.125rem;
-}
-
-.video-card p {
-  margin: 0.5rem 0 1rem;
-  color: #475569;
 }
 
 /* ===============================
@@ -210,13 +165,12 @@ header {
 ================================ */
 
 .features {
-  background-color: #f8fafc;
+  background: #f8fafc;
   padding: 4rem 1rem;
 }
 
 .features h2 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -229,18 +183,10 @@ header {
 }
 
 .feature-card {
-  background-color: #ffffff;
+  background: white;
+  border: 1px solid #e5e7eb;
   border-radius: 1rem;
   padding: 1.5rem;
-  border: 1px solid #e5e7eb;
-}
-
-.feature-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.feature-card p {
-  color: #475569;
 }
 
 /* ===============================
@@ -253,30 +199,10 @@ header {
   padding: 0 1rem;
 }
 
-.blog h2 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.blog h2 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-/* NEW: grid only for blog cards */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-}
-
-
-.blog-card small {
-  color: #64748b;
-}
-
-.blog-card h4 {
-  margin-top: 0.25rem;
 }
 
 /* ===============================
@@ -284,28 +210,18 @@ header {
 ================================ */
 
 .faq {
-  background-color: #f1f5f9;
+  background: #f1f5f9;
   padding: 4rem 1rem;
 }
 
 .faq h2 {
   text-align: center;
-  font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
 .faq-item {
   max-width: 800px;
-  margin: 0 auto 1.5rem;
-}
-
-.faq-item h4 {
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.faq-item p {
-  color: #475569;
+  margin: 0 auto 1rem;
 }
 
 /* ===============================
@@ -313,49 +229,33 @@ header {
 ================================ */
 
 footer {
-  background-color: #e5e7eb;
+  background: #e5e7eb;
   padding: 3rem 1rem;
 }
 
-footer > div {
+footer div {
   max-width: 1200px;
-  margin: 0 auto 2rem;
-}
-
-.footer-about,
-.footer-links,
-.footer-social {
-  margin-bottom: 1.5rem;
-}
-
-.footer-links a,
-.footer-social a {
-  display: block;
-  margin-top: 0.25rem;
-  color: #334155;
-}
-
-footer p {
-  text-align: center;
-  font-size: 0.875rem;
-  color: #475569;
+  margin: 0 auto 1.5rem;
 }
 
 /* ===============================
-   RESPONSIVE
+   MEDIA QUERIES
 ================================ */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: left;
+    align-items: center;
+  }
+
+  .hero-image {
+    margin-top: 0;
   }
 
   .nav-center {
-    display: none;
-  }
-
-  .blog-card {
-    grid-template-columns: 1fr;
+    display: flex;
   }
 }

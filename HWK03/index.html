@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Audacity ® | Free Audio editor, recorder, music making and more!</title>
+  <title>Audacity ® | Free Audio Editor</title>
 
   <link rel="stylesheet" href="styles.css" />
-
-  <link rel="icon" href="index_files/favicon.ico" sizes="48x48" />
-  <link rel="icon" href="index_files/favicon.svg" sizes="any" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="index_files/apple-touch-icon.png" />
 
   <meta
     name="description"
@@ -19,44 +15,54 @@
 </head>
 
 <body>
+
   <a class="skip-to-content" href="#main">Skip to content</a>
 
   <!-- ================= HEADER ================= -->
   <header>
-    <nav class="nav">
-      <div class="nav-left">
-        <a href="/">
-          <img
-            src="index_files/Audacity_Logo.DK8H7nvr.svg"
-            alt="Audacity logo"
-          />
-          <span>Audacity</span>
-        </a>
-      </div>
+    <nav class="nav" aria-label="Primary Navigation">
 
-      <div class="nav-center">
-        <a href="/download">Downloads</a>
-        <a href="/FAQ">FAQ</a>
-        <a href="/blog">Blog</a>
-        <a href="https://support.audacityteam.org">Help</a>
-        <a href="https://forum.audacityteam.org">Forum</a>
-        <a href="https://merch.audacityteam.org">Merch</a>
-      </div>
+      <ul class="nav-left">
+        <li>
+          <a href="/">
+            <img
+              src="index_files/Audacity_Logo.DK8H7nvr.svg"
+              alt="Audacity logo"
+            />
+            <span>Audacity</span>
+          </a>
+        </li>
+      </ul>
 
-      <div class="nav-right">
-        <a href="/cloud-saving">Audacity Cloud Saving</a>
-        <a href="https://audio.com/audacity/auth/sign-in" class="button">
-          Sign up
-        </a>
-      </div>
+      <ul class="nav-center">
+        <li><a href="/download">Downloads</a></li>
+        <li><a href="/FAQ">FAQ</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://support.audacityteam.org">Help</a></li>
+        <li><a href="https://forum.audacityteam.org">Forum</a></li>
+        <li><a href="https://merch.audacityteam.org">Merch</a></li>
+      </ul>
+
+      <ul class="nav-right">
+        <li><a href="/cloud-saving">Audacity Cloud Saving</a></li>
+        <li>
+          <a href="https://audio.com/audacity/auth/sign-in" class="button">
+            Sign up
+          </a>
+        </li>
+      </ul>
+
     </nav>
   </header>
 
-  <!-- ================= HERO ================= -->
+  <!-- ================= MAIN ================= -->
   <main id="main">
+
+    <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="hero-content">
-        <div class="hero-text">
+
+        <article class="hero-text">
           <h1>
             Audacity is the world's most popular audio editing and recording app
           </h1>
@@ -68,23 +74,26 @@
           <a class="text-link" href="#">
             Download without Muse Hub
           </a>
-        </div>
+        </article>
 
-        <div class="hero-image">
+        <figure class="hero-image">
           <img
             src="index_files/HeroBannerImage.BT1jp_L7_AJsjM.webp"
             alt="Audacity app on a laptop"
           />
-        </div>
+        </figure>
+
       </div>
     </section>
 
     <!-- ================= VIDEOS ================= -->
-    <section class="videos">
+    <section class="videos" aria-labelledby="videos-heading">
+      <h2 id="videos-heading" class="visually-hidden">Featured Videos</h2>
+
       <article class="video-card">
         <img
           src="index_files/video-1.jpg"
-          alt="(Video of) How we're building Audacity 4"
+          alt="How we're building Audacity 4 video thumbnail"
         />
         <h3>How we're building Audacity 4</h3>
       </article>
@@ -92,7 +101,7 @@
       <article class="video-card">
         <img
           src="index_files/video-2.jpg"
-          alt="(Video of) LANDR FX Voice"
+          alt="LANDR FX Voice plugin video thumbnail"
         />
         <h3>LANDR FX Voice</h3>
         <p>One knob for polished studio quality vocals</p>
@@ -107,70 +116,78 @@
       <h2>All you need to create</h2>
 
       <div class="feature-grid">
-        <div class="feature-card">
+        <article class="feature-card">
           <h3>Cross-platform</h3>
           <p>Runs on Windows, macOS, and Linux.</p>
-        </div>
+        </article>
 
-        <div class="feature-card">
+        <article class="feature-card">
           <h3>Import & Export</h3>
           <p>Supports WAV, MP3, FLAC, OGG, and more.</p>
-        </div>
+        </article>
 
-        <div class="feature-card">
+        <article class="feature-card">
           <h3>Plugin support</h3>
           <p>VST3, Nyquist, and third-party plugins.</p>
-        </div>
+        </article>
 
-        <div class="feature-card">
+        <article class="feature-card">
           <h3>Audio analysis</h3>
           <p>Spectrogram and scientific analyzers.</p>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- ================= BLOG ================= -->
     <section class="blog">
-        <h2>
-            New from our <a href="/blog">blog</a>
-        </h2>
+      <h2>
+        New from our <a href="/blog">blog</a>
+      </h2>
 
-        <div class="blog-grid">
-            <article class="blog-card">
-            <img src="index_files/openvino-logo.g7zKvwM-_2plvuq.webp" alt="OpenVINO logo" />
-            <small>June 11, 2025</small>
-            <h4>OpenVINO AI Plugins for macOS</h4>
-            </article>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img
+            src="index_files/openvino-logo.g7zKvwM-_2plvuq.webp"
+            alt="OpenVINO logo"
+          />
+          <small>June 11, 2025</small>
+          <h4>OpenVINO AI Plugins for macOS</h4>
+        </article>
 
-            <article class="blog-card">
-            <img src="index_files/audacity-0.8.BLUesJEs_8E0D4.webp" alt="Audacity logo" />
-            <small>May 28, 2025</small>
-            <h4>Audacity turns 25!</h4>
-            </article>
-        </div>
+        <article class="blog-card">
+          <img
+            src="index_files/audacity-0.8.BLUesJEs_8E0D4.webp"
+            alt="Audacity logo"
+          />
+          <small>May 28, 2025</small>
+          <h4>Audacity turns 25!</h4>
+        </article>
+      </div>
     </section>
 
     <!-- ================= FAQ ================= -->
     <section class="faq">
       <h2>Popular in the FAQ</h2>
 
-      <div class="faq-item">
-        <h4>What is Audacity?</h4>
+      <details class="faq-item">
+        <summary>What is Audacity?</summary>
         <p>
-          Audacity is a free, open-source audio editor for recording and editing
-          sound.
+          Audacity is a free, open-source audio editor for recording and editing sound.
         </p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Is Audacity free?</h4>
-        <p>Yes. Always free and open source.</p>
-      </div>
+      <details class="faq-item">
+        <summary>Is Audacity free?</summary>
+        <p>
+          Yes. Always free and open source.
+        </p>
+      </details>
     </section>
+
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-about">
       <h3>Audacity</h3>
       <p>
@@ -196,5 +213,6 @@
       © 2026 Muse Group & contributors
     </p>
   </footer>
+
 </body>
 </html>
