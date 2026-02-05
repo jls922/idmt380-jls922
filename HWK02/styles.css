@@ -1,6 +1,4 @@
-/* ===============================
-   RESET & BASE
-================================ */
+/* RESET & BASE */
 
 *,
 *::before,
@@ -39,9 +37,7 @@ a {
   color: inherit;
 }
 
-/* ===============================
-   ACCESSIBILITY
-================================ */
+/* ACCESSIBILITY */
 
 .skip-to-content {
   position: absolute;
@@ -65,9 +61,7 @@ a {
   clip: rect(0, 0, 0, 0);
 }
 
-/* ===============================
-   BUTTONS
-================================ */
+/* BUTTONS */
 
 .button {
   display: inline-block;
@@ -87,9 +81,7 @@ a {
   color: white;
 }
 
-/* ===============================
-   HEADER / NAV
-================================ */
+/* HEADER / NAV */
 
 header {
   position: sticky;
@@ -118,9 +110,7 @@ nav ul {
   height: 32px;
 }
 
-/* ===============================
-   HERO (Mobile First)
-================================ */
+/* HERO (Mobile First) */
 
 .hero {
   background: linear-gradient(90deg, #1e3a8a, #2563eb);
@@ -141,9 +131,7 @@ nav ul {
   margin-top: 2rem;
 }
 
-/* ===============================
-   VIDEOS
-================================ */
+/* VIDEOS */
 
 .videos {
   max-width: 1200px;
@@ -160,9 +148,7 @@ nav ul {
   padding: 1rem;
 }
 
-/* ===============================
-   FEATURES
-================================ */
+/* FEATURES*/
 
 .features {
   background: #f8fafc;
@@ -189,9 +175,7 @@ nav ul {
   padding: 1.5rem;
 }
 
-/* ===============================
-   BLOG
-================================ */
+/* BLOG*/
 
 .blog {
   max-width: 1200px;
@@ -205,9 +189,7 @@ nav ul {
   gap: 2rem;
 }
 
-/* ===============================
-   FAQ
-================================ */
+/* FAQ*/
 
 .faq {
   background: #f1f5f9;
@@ -224,9 +206,7 @@ nav ul {
   margin: 0 auto 1rem;
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
   background: #e5e7eb;
@@ -238,9 +218,7 @@ footer div {
   margin: 0 auto 1.5rem;
 }
 
-/* ===============================
-   MEDIA QUERIES
-================================ */
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .hero-content {
