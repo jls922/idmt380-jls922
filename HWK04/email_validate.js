@@ -3,6 +3,8 @@
     const emailInput = document.getElementById("email");
     const emailError = document.getElementById("email-error");
 
+    //const nameInput = document.getElementById("name"); //wip
+
     emailInput.addEventListener("blur", function () {
       if (!emailInput.checkValidity()) {
         emailInput.setAttribute("aria-invalid", "true");
@@ -18,3 +20,4 @@
         e.preventDefault();
       }
     });
+
