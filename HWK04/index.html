@@ -7,7 +7,7 @@
   <title>HWK04</title>
 
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="contact.css" />
+  
 </head>
 
 <body id="top">
@@ -18,7 +18,6 @@
   <header>
     <nav class="nav" aria-label="Primary Navigation">
 
-      <!-- Brand -->
       <ul class="nav-left" aria-label="Brand">
         <li aria-label="Audacity Home">
           <a href="index.html">
@@ -31,7 +30,6 @@
         </li>
       </ul>
 
-      <!-- Main Links -->
       <ul class="nav-center" aria-label="Main Navigation Links">
         <li aria-label="Downloads"><a href="#">Downloads</a></li>
         <li aria-label="Frequently Asked Questions"><a href="#">FAQ</a></li>
@@ -41,7 +39,6 @@
         <li aria-label="Merchandise"><a href="#">Merch</a></li>
       </ul>
 
-      <!-- Account Links -->
       <ul class="nav-right" aria-label="Account and User Links">
         <li aria-label="Audacity Cloud Saving">
           <a href="#">Audacity Cloud Saving</a>
@@ -57,86 +54,107 @@
   <!-- MAIN -->
   <main id="main">
 
+    <!-- HERO (exact same structure as index) -->
     <section class="hero">
       <section class="hero-content">
+
         <article class="hero-text">
-          <h1>Contact Us</h1>
-          <p>Have a question? Send us a message below.</p>
+          <h1>Contact the Audacity Team</h1>
+
+          <p>
+            Have a question, suggestion, or issue? Send us a message below.
+          </p>
         </article>
+
       </section>
     </section>
 
-    <section class="contact-section">
-      <h2>Send a Message</h2>
+    <!-- CONTACT FORM SECTION -->
+    <section class="features">
+      <section class="feature-grid">
 
-      <form id="contact-form" novalidate>
+        <article class="feature-card">
 
-        <div class="form-row">
+          <form id="contact-form" novalidate>
 
-          <div class="form-field">
-            <label for="first-name">
-              First Name <span aria-label="required">*</span>
-            </label>
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              required
-              aria-required="true"
-              autocomplete="given-name"
-            />
-          </div>
+            <section class="form-row">
 
-          <div class="form-field">
-            <label for="last-name">
-              Last Name <span aria-label="required">*</span>
-            </label>
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              required
-              aria-required="true"
-              autocomplete="family-name"
-            />
-          </div>
+              <section class="form-field">
+                <label for="first-name">
+                  First Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="first-error"
+                  autocomplete="given-name"
+                />
+                <p id="first-error" class="error-message" role="alert"></p>
+              </section>
 
-        </div>
+              <section class="form-field">
+                <label for="last-name">
+                  Last Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="last-error"
+                  autocomplete="family-name"
+                />
+                <p id="last-error" class="error-message" role="alert"></p>
+              </section>
 
-        <div class="form-field">
-          <label for="email">
-            Email Address <span aria-label="required">*</span>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            aria-required="true"
-            aria-describedby="email-error"
-            autocomplete="email"
-          />
-          <div id="email-error" class="error-message" role="alert"></div>
-        </div>
+            </section>
 
-        <div class="form-field">
-          <label for="message">
-            Message / Comments <span aria-label="required">*</span>
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            aria-required="true"
-          ></textarea>
-        </div>
+            <section class="form-field">
+              <label for="email">
+                Email Address <span aria-label="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+                autocomplete="email"
+              />
+              <p id="email-error" class="error-message" role="alert"></p>
+            </section>
 
-        <button type="submit" class="button primary">
-          Submit Message
-        </button>
+            <section class="form-field">
+              <label for="message">
+                Message / Comments <span aria-label="required">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+              ></textarea>
+              <p id="message-error" class="error-message" role="alert"></p>
+            </section>
 
-      </form>
+            <button type="submit" class="button primary">
+              Submit Message
+            </button>
+
+            <p id="form-success" class="success-message"></p>
+
+          </form>
+
+        </article>
+
+      </section>
     </section>
 
   </main>
@@ -174,7 +192,7 @@
 
   </footer>
 
-  <script src="email_validate.js"></script>
+  <script src="contact.js"></script>
 
 </body>
 </html>
