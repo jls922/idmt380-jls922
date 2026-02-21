@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--<title>Contact | Audacity</title>-->
+  <title>Final | Contact</title>
+
+  <link rel="stylesheet" href="contact.css" />
+  
+</head>
+
+<body id="top">
+
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="nav" aria-label="Primary Navigation">
+
+      <ul class="nav-left" aria-label="Brand">
+        <li aria-label="Audacity Home">
+          <a href="index.html">
+            <img
+              src="images/Audacity_Logo.DK8H7nvr.svg"
+              alt="Audacity logo"
+            />
+            Audacity
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-center" aria-label="Main Navigation Links">
+        <li aria-label="Downloads"><a href="#">Downloads</a></li>
+        <li aria-label="Frequently Asked Questions"><a href="#">FAQ</a></li>
+        <li aria-label="Blog"><a href="#">Blog</a></li>
+        <li aria-label="Help"><a href="#">Help</a></li>
+        <li aria-label="Forum"><a href="#">Forum</a></li>
+        <li aria-label="Merchandise"><a href="#">Merch</a></li>
+      </ul>
+
+      <ul class="nav-right" aria-label="Account and User Links">
+        <li aria-label="Audacity Cloud Saving">
+          <a href="#">Audacity Cloud Saving</a>
+        </li>
+        <li aria-label="Sign Up">
+          <a href="#" class="button">Sign up</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main">
+
+    <!-- HERO (exact same structure as index) -->
+    <section class="hero">
+      <section class="hero-content">
+
+        <article class="hero-text">
+          <h1>Contact the Audacity Team</h1>
+
+          <p>
+            Have a question, suggestion, or issue? Send us a message below.
+          </p>
+        </article>
+
+      </section>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="features">
+      <section class="feature-grid">
+
+        <article class="feature-card">
+
+          <form id="contact-form" novalidate>
+
+            <section class="form-row">
+
+              <section class="form-field">
+                <label for="first-name">
+                  First Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="first-error"
+                  autocomplete="given-name"
+                />
+                <p id="first-error" class="error-message" role="alert"></p>
+              </section>
+
+              <section class="form-field">
+                <label for="last-name">
+                  Last Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="last-error"
+                  autocomplete="family-name"
+                />
+                <p id="last-error" class="error-message" role="alert"></p>
+              </section>
+
+            </section>
+
+            <section class="form-field">
+              <label for="email">
+                Email Address <span aria-label="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+                autocomplete="email"
+              />
+              <p id="email-error" class="error-message" role="alert"></p>
+            </section>
+
+            <section class="form-field">
+              <label for="message">
+                Message / Comments <span aria-label="required">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+              ></textarea>
+              <p id="message-error" class="error-message" role="alert"></p>
+            </section>
+
+            <button type="submit" class="button primary">
+              Submit Message
+            </button>
+
+            <p id="form-success" class="success-message"></p>
+
+          </form>
+
+        </article>
+
+      </section>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer aria-label="Footer">
+
+    <section class="footer-first">
+      <p class="footer-text">
+        Free, open-source audio editor for Windows, macOS, and Linux.
+      </p>
+    </section>
+
+    <section aria-label="Footer Navigation">
+
+      <ul aria-label="Return to Top">
+        <li aria-label="Skip to top link">
+          <a href="#top" class="skip-link-footer">
+            Skip to top
+          </a>
+        </li>
+      </ul>
+
+      <ul aria-label="Social Media Links">
+        <li aria-label="GitHub"><a class="icon" href="#">GitHub</a></li>
+        <li aria-label="Discord"><a class="icon" href="#">Discord</a></li>
+        <li aria-label="YouTube"><a class="icon" href="#">YouTube</a></li>
+      </ul>
+
+    </section>
+
+    <p class="copyright">
+      © 2026 Muse Group & contributors
+    </p>
+
+  </footer>
+
+  <script src="contact.js"></script>
+
+</body>
+</html>
