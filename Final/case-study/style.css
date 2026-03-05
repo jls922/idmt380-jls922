@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+  }
+
+@font-face {
+    font-family: Source Sans; /*Source Sans 3*/
+    src: url(../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+:root{
+	--rhythm: 1.5rem;
+}
+
+body {
+    font-family: Source Sans;
+}
+a {
+    color: #003642;
+}
+h1, h2, h3 {
+    color: #003642;
+    font-family: Merriweather;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: yellow;
+}
+
+p, li {
+    color: #003642;
+    font-size: 18px;
+}
+
+.casestudyhero {
+    align-items: center;
+    border: 5px solid #003642;
+    border-radius: 5px;
+    display: block;
+    margin: 40px auto;
+    width: 75%;
+}
+
+.content {
+    margin: 40px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.title-container {
+    background-color: #18746d;
+    color: white;
+    padding: 1px 16px; /*padding: 20px;*/
+    text-align: left;
+}
+
+.vimeo-video {
+    border: 5px solid #003642;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+
+@media screen and (max-width: 725px) {
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+    h2, h3 {
+        font-size: 1.25rem;
+    }
+    p, li {
+        font-size: 16px;
+    }
+}
