@@ -414,6 +414,10 @@ footer a {
     --neutral-white: #0f1117;
   }
 
+  h1, h2, h3, h4, p {
+    color: white;
+  }
+
   header {
     background-color: #0f1117;
     border-bottom-color: #2a2a2a;
@@ -432,7 +436,7 @@ footer a {
   }
 
   .case-section-title {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
   }
 
   .case-card {
@@ -442,12 +446,12 @@ footer a {
 
   .case-card h2,
   .case-card h3 {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
   }
 
   .case-card p,
   .case-card ul {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   footer {
@@ -456,11 +460,15 @@ footer a {
   }
 
   footer p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   a {
     color: var(--primary-light);
+  }
+
+  a:hover {
+    color: orange;
   }
 
   .nav-right a {

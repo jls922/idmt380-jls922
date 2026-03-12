@@ -524,7 +524,7 @@ textarea:focus {
   }
 
   .feature-card p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .video-card {
@@ -533,7 +533,7 @@ textarea:focus {
   }
 
   .video-card p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .faq {
@@ -542,7 +542,7 @@ textarea:focus {
   }
 
   .faq-item p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   footer {
@@ -551,15 +551,15 @@ textarea:focus {
   }
 
   footer p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .blog-card small {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .nav-center a {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .button.primary {

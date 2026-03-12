@@ -426,16 +426,16 @@ footer a {
   }
 
   .about-card h2 {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
   }
 
   .about-card p,
   .about-card ul {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .features-faq > h2 {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
   }
 
   .faq-card {
@@ -444,12 +444,12 @@ footer a {
   }
 
   .faq-card h3 {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
   }
 
   .faq-card p,
   .faq-card ul {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .team-section {
@@ -457,7 +457,7 @@ footer a {
   }
 
   .team-section > h2 {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
   }
 
   .team-section .faq-card {
@@ -470,11 +470,15 @@ footer a {
   }
 
   footer p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   a {
-    color: var(--primary-light);
+    color: white; /*var(--primary-light);*/
+  }
+
+  a:hover {
+    color: orange;
   }
 
   .nav-right a {

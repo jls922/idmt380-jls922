@@ -471,7 +471,7 @@ footer ul {
   }
 
   .feature-card p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .video-card {
@@ -480,7 +480,7 @@ footer ul {
   }
 
   .video-card p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .faq {
@@ -489,7 +489,7 @@ footer ul {
   }
 
   .faq-item p {
-    color: #a0aec0;
+    color: #d3ddec; /*#a0aec0;*/
   }
 
   footer {
@@ -498,15 +498,15 @@ footer ul {
   }
 
   footer p {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .blog-card small {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   .nav-center a {
-    color: #a0aec0;
+    color: white; /*#a0aec0;*/
   }
 
   p.button.primary {
