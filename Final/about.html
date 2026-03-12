@@ -1,11 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final | About</title>
+ 
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="about.css" />
 </head>
-<body>
-    <h1>RAHHH</h1> <!--taking https://www.audacityteam.org/faq/ content-->
+ 
+<body id="top">
+ 
+  <a class="skip-to-content" href="#main">Skip to content</a>
+ 
+  <!-- HEADER -->
+  <header>
+    <nav class="nav" aria-label="Primary Navigation">
+ 
+      <ul class="nav-left" aria-label="Brand">
+        <li aria-label="Audacity Home">
+          <a href="index.html">
+            <img
+              src="images/Audacity_Logo.DK8H7nvr.svg"
+              alt="Audacity logo"
+            />
+            Audacity
+          </a>
+        </li>
+      </ul>
+ 
+      <ul class="nav-right" aria-label="Main Navigation Links">
+        <li aria-label="About"><a href="about.html" aria-current="page">About</a></li>
+        <li aria-label="Contact Us"><a href="contact.html">Contact</a></li>
+        <li aria-label="Case Study"><a href="case-study/index.html">Case</a></li>
+      </ul>
+ 
+    </nav>
+  </header>
+ 
+  <!-- MAIN -->
+  <main id="main">
+ 
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <section class="hero-content">
+        <article class="hero-text">
+          <h1 id="hero-heading">About Audacity</h1>
+        </article>
+      </section>
+    </section>
+ 
+    <!-- ABOUT SECTION -->
+    <section class="about-section" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="visually-hidden">About Audacity</h2>
+ 
+      <section class="about-grid">
+ 
+        <!-- What is Audacity -->
+        <article class="about-card" aria-labelledby="what-heading">
+          <h2 id="what-heading">What is Audacity?</h2>
+          <p>
+            Audacity is the world's most popular free software for recording and
+            editing audio. Whether you're producing music, a podcast, or just
+            playing around with audio, Audacity is for you. It is
+            available to download
+            as a desktop app for Windows, macOS and Linux.
+          </p>
+        </article>
+ 
+        <!-- Is it free -->
+        <article class="about-card" aria-labelledby="free-heading">
+          <h2 id="free-heading">Is Audacity free?</h2>
+          <p>
+            Yes! Audacity has always — and will always — remain free for everyone.
+            It is available to download from the
+            Audacity website.
+          </p>
+        </article>
+ 
+        <!-- Who is it for -->
+        <article class="about-card" aria-labelledby="who-heading">
+          <h2 id="who-heading">Who is Audacity for?</h2>
+          <p>
+            Audacity is for anyone who wants to get creative with sound. It's also
+            the perfect tool for anyone who needs to quickly edit or export audio,
+            for any reason.
+          </p>
+          <p>Here are a few of the most common ways Audacity is used every day:</p>
+          <ul aria-label="Common Audacity use cases">
+            <li>Podcasters recording and editing spoken content. Audacity is the world's most popular app for podcasters.</li>
+            <li>Musicians and bedroom producers, who can edit multiple parts, mix and add simple effects in an app that's faster and more intuitive than most DAWs.</li>
+            <li>Field recorders and educators, who can capture, edit or analyze the sounds of environments, ambience, animals and more.</li>
+          </ul>
+        </article>
+ 
+        <!-- Open source -->
+        <article class="about-card" aria-labelledby="opensource-heading">
+          <h2 id="opensource-heading">Is Audacity open source?</h2>
+          <p>
+            Audacity is proudly open source. Its source code remains open to anyone
+            to view or modify. Audacity is licensed under the GNU General Public
+            License.
+          </p>
+          <p>
+            A dedicated worldwide community of passionate audio lovers have
+            collaborated to make Audacity the well-loved software it is today. Many
+            third-party plugins have also been developed for Audacity thanks to its
+            open-source nature.
+          </p>
+        </article>
+ 
+        <!-- Does it cost money -->
+        <article class="about-card" aria-labelledby="cost-heading">
+          <h2 id="cost-heading">Does Audacity cost money?</h2>
+          <p>
+            No, Audacity is free for everyone. If you found yourself paying for
+            Audacity, one of the following things happened:
+          </p>
+          <ul aria-label="Reasons you may have been charged">
+            <li>
+              You signed up for additional Audacity Cloud storage, so you can
+              save more projects in the cloud.
+              Contact support@audacityteam.org to ask for a refund.
+            </li>
+            <li>
+              You tried to download an Audacity app for iOS or Android. At the time of
+              writing, there doesn't exist an Audacity version for these platforms, so
+              any app you see there was not made by the Audacity team. Contact Apple or
+              Google Play support and ask for a refund.
+            </li>
+          </ul>
+        </article>
+ 
+      </section>
+    </section>
+ 
+    <!-- FEATURES SECTION -->
+    <section class="features-faq" aria-labelledby="features-heading">
+      <h2 id="features-heading">Features</h2>
+ 
+      <section class="faq-group" aria-labelledby="what-features-heading">
+        <article class="faq-card" aria-labelledby="what-features-heading">
+          <h3 id="what-features-heading">What features come with Audacity?</h3>
+          <p>In the app, every audio creator can:</p>
+          <ul aria-label="Audacity feature list">
+            <li>Record live with a microphone or mixer, or digitize imported recordings.</li>
+            <li>Edit your tracks fast with intuitive tools, including cutting, pasting and smooth volume mixing.</li>
+            <li>Perfect your audio with more advanced effects.</li>
+            <li>Reduce background static with noise reduction tools.</li>
+            <li>Adjust tempo without altering pitch or vice versa.</li>
+            <li>Alter frequencies with equalizers, high and low-pass filters and more.</li>
+            <li>Add impact with distortion, echo, reverb and more effects.</li>
+            <li>Import, export and convert files in every popular audio format, including MP3, M4A, AIFF, FLAC, WAV and more.</li>
+            <li>Extend your editing with an extensive selection of third-party effects plugins.</li>
+            <li>Collaborate and backup projects with Cloud saving.</li>
+            <li>Visualize and analyze audio clips in Spectrogram view.</li>
+            <li>Upload and share your files to Audio.com, instantly.</li>
+          </ul>
+          <p>
+            To learn more about specific features, check out the
+            Audacity manual.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="formats-heading">
+          <h3 id="formats-heading">What audio file formats are compatible with Audacity?</h3>
+          <p>
+            Audacity supports import, export and conversion of files in every popular
+            audio format, including MP3, M4A, AIFF, FLAC, WAV and more. You can even
+            combine clips from multiple formats into the same audio project.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="quality-heading">
+          <h3 id="quality-heading">What audio quality is compatible with Audacity?</h3>
+          <p>
+            Audacity supports 16-bit, 24-bit and 32-bit audio. Sample rates and formats
+            are converted using high-quality resampling and dithering.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="music-heading">
+          <h3 id="music-heading">Can I use Audacity to produce music?</h3>
+          <p>
+            Yes! Audacity can be used to record and produce your music tracks. Because
+            it's free and easy-to-use, Audacity is a great DAW for music production
+            beginners or those who want to make quick edits to recordings of live
+            performances.
+          </p>
+          <p>
+            For more information on how to use specific features, check out the
+            Audacity manual.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="podcast-heading">
+          <h3 id="podcast-heading">Can I use Audacity to produce podcasts?</h3>
+          <p>
+            Yes! In fact, Audacity is the world's most popular software for recording
+            and producing podcasts — because it's easy-to-use and completely free.
+          </p>
+          <p>
+            For more information, check out the
+            Audacity manual.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="daw-heading">
+          <h3 id="daw-heading">Is Audacity a DAW?</h3>
+          <p>
+            Audacity is blurring the line between audio editor and DAW. It's capable
+            of much more than a mere audio editor (for example, non-destructive editing
+            and realtime effects), but it also lacks some key features that DAWs
+            traditionally have (MIDI editing and virtual instruments).
+          </p>
+          <p>
+            The gap towards being a full DAW is being rapidly closed, with each release
+            bringing new features that make Audacity increasingly capable, while
+            remaining simple to use.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="tutorials-heading">
+          <h3 id="tutorials-heading">I'm just getting started with Audacity. Are there any free tutorials available?</h3>
+          <p>
+            We have a beginner tutorial series available at
+            support.audacityteam.org,
+            covering
+            installing Audacity,
+            FFmpeg,
+            recording your voice,
+            recording desktop audio,
+            editing audio,
+            saving and exporting projects
+            and more!
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="plugins-heading">
+          <h3 id="plugins-heading">Is Audacity compatible with third-party plugins?</h3>
+          <p>
+            Yes! As an open-source application many third-party plugins have been
+            developed for Audacity. Check out a list at
+            plugins.audacityteam.org.
+          </p>
+          <p>
+            Audacity supports VST3, LADSPA, LV2, Nyquist, VST and Audio Unit plugins.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="more-info-heading">
+          <h3 id="more-info-heading">Where can I find more information about specific Audacity features?</h3>
+          <p>
+            Try the free, online
+            Audacity manual
+            for in-depth, technical information on specific features.
+          </p>
+        </article>
+ 
+      </section>
+    </section>
+ 
+    <!-- TEAM & NEWS SECTION -->
+    <section class="team-section" aria-labelledby="team-heading">
+      <h2 id="team-heading">Team &amp; News</h2>
+ 
+      <section class="faq-group" aria-labelledby="team-members-heading">
+ 
+        <article class="faq-card" aria-labelledby="team-members-heading">
+          <h3 id="team-members-heading">Who is the Audacity Team?</h3>
+          <p>
+            Audacity is developed by a small team working remotely and supported by
+            the community.
+          </p>
+          <p>Current team members are:</p>
+          <ul aria-label="Audacity team members">
+            <li>Product owner: Martin Keary</li>
+            <li>Project manager: Yana Larina</li>
+            <li>Developers: Matthieu Hodgkinson, Grzegorz Wojciechowski, Dmitry Makarenko, Gabriel Sartori, Paul Martin</li>
+            <li>Designers: Dilson's Pickles, Leo Wattenberg</li>
+            <li>Testers: Sergey Lapysh, Antons Činakovs</li>
+            <li>
+              People from MuseScore Studio helping
+              with Audacity 4 development: Jessica Williamson, Igor Korsukov, Elnur Ismailzada
+            </li>
+          </ul>
+          <p>
+            Code contributors can be found on GitHub in the
+            commit history
+            and graphs.
+            Contributors to the manual,
+            contributors to the forum,
+            and contributors to the support site
+            can be found on their respective pages.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="news-heading">
+          <h3 id="news-heading">Where can I stay up to date with the latest Audacity news and updates?</h3>
+          <p>
+            Check out our blog,
+            subscribe to the Audacity YouTube Channel,
+            or follow us on Facebook
+            or Twitter.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="dev-heading">
+          <h3 id="dev-heading">I'm an open-source developer working with Audacity. How can I get in touch with the team?</h3>
+          <p>
+            Audacity is currently undergoing major code restructuring, so we
+            unfortunately have very limited capacity to support third parties. That
+            said, feel free to drop by our
+            dev Discord.
+          </p>
+        </article>
+ 
+        <article class="faq-card" aria-labelledby="history-heading">
+          <h3 id="history-heading">What is the history of Audacity?</h3>
+          <p>
+            Audacity has transformed the lives of musicians and audio content creators
+            for over two decades. Since launching in 2000, the desktop app has been
+            downloaded over 200 million times.
+          </p>
+          <p>
+            In 2020, we joined with the makers of
+            Ultimate Guitar,
+            MuseScore and others to form
+            , with a mission to empower millions
+            of creatives all over the globe. Since then, our sister service
+            Audio.com launched.
+          </p>
+          <p>
+            We remain committed to our free, open-source roots — and passionate about
+            helping the next generation create the very best sounds, music and podcasts.
+          </p>
+        </article>
+ 
+      </section>
+    </section>
+ 
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer aria-label="Footer">
+ 
+    <section class="footer-first">
+      <p class="footer-text">
+        Free, open-source audio editor for Windows, macOS, and Linux.
+      </p>
+    </section>
+ 
+    <section aria-label="Footer Navigation">
+ 
+      <ul aria-label="Return to Top">
+        <li aria-label="Skip to top link">
+          <a href="#top" class="skip-link-footer">Skip to top</a>
+        </li>
+      </ul>
+ 
+      <ul aria-label="Social Media Links">
+        <li aria-label="GitHub"><p class="icon" href="#">GitHub</p></li>
+        <li aria-label="Discord"><p class="icon" href="#">Discord</p></li>
+        <li aria-label="YouTube"><p class="icon" href="#">YouTube</p></li>
+      </ul>
+ 
+    </section>
+ 
+    <p class="copyright">
+      © 2026 Muse Group &amp; contributors
+    </p>
+ 
+  </footer>
+ 
 </body>
 </html>

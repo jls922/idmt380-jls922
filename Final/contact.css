@@ -1,6 +1,6 @@
-/* ===============================
+/*
    RESET & BASE
-================================ */
+*/
 
 *,
 *::before,
@@ -23,14 +23,13 @@
 }
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif; /*system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, */
   line-height: 1.5;
 }
 
 body {
-  color: var(--neutral-black);/*#0f172a;*/
-  background-color: var(--neutral-white); /*#ffffff;*/
+  color: var(--neutral-black);
+  background-color: var(--neutral-white); 
 }
 
 img {
@@ -39,13 +38,17 @@ img {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--primary-mid);
+  text-decoration: underline;
 }
 
-/* ===============================
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* 
    UTILITY
-================================ */
+*/
 
 .skip-to-content {
   position: absolute;
@@ -56,15 +59,27 @@ a {
 .skip-to-content:focus {
   left: 1rem;
   top: 1rem;
-  background: var(--neutral-black); /*#000;*/
-  color: var(--neutral-white); /*#fff;*/
+  background: var(--neutral-black); 
+  color: var(--neutral-white); 
   padding: 0.5rem 1rem;
   z-index: 1000;
 }
 
-/* ===============================
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
    BUTTONS & LINKS
-================================ */
+*/
 
 .button {
   display: inline-block;
@@ -75,31 +90,31 @@ a {
 }
 
 .button.primary {
-  background-color: var(--primary-dark); /*#2563eb;*/
-  color: var(--neutral-white); /*#ffffff;*/
+  background-color: var(--primary-dark); 
+  color: var(--neutral-white); 
 }
 
 .button.primary:hover {
-  background-color: var(--primary-dark); /*#1d4ed8;*/
+  background-color: var(--primary-dark);
   transform: translateY(-1px);
 }
 
 .text-link {
   display: inline-block;
   margin-top: 0.75rem;
-  color: var(--primary-dark); /*#2563eb;*/
+  color: var(--primary-dark); 
   font-weight: 500;
 }
 
-/* ===============================
+/* 
    HEADER / NAV
-================================ */
+*/
 
 header {
   position: sticky;
   top: 0;
-  background-color: var(--neutral-white); /*#ffffff;*/
-  border-bottom: 1px solid var(--neutral-black); /*#e5e7eb;*/
+  background-color: var(--neutral-white);
+  border-bottom: 1px solid var(--neutral-black);
   z-index: 50;
 }
 
@@ -119,21 +134,13 @@ header {
   gap: 0.5rem;
   font-weight: 700;
   font-size: 1.125rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-left img {
-  height: 32px;      /* adjust as needed: 24–40px is typical */
+  height: 32px;
   width: auto;
-}
-
-.nav-center {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.nav-center a {
-  font-size: 0.95rem;
-  color: #334155;
 }
 
 .nav-right {
@@ -142,15 +149,27 @@ header {
   align-items: center;
 }
 
+.nav-right a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.95rem;
+}
+
+.nav-right a[aria-current="page"] {
+  font-weight: 700;
+  border-bottom: 2px solid var(--secondary-mid);
+  padding-bottom: 2px;
+}
+
 .nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* ===============================
+/* 
    HERO
-================================ */
+*/
 
 .hero {
   background: linear-gradient(90deg, #1e3a8a, #2563eb);
@@ -181,9 +200,9 @@ header {
     color: white;
 }
 
-/* ===============================
+/*
    VIDEOS
-================================ */
+*/
 
 .videos {
   max-width: 1200px;
@@ -211,9 +230,9 @@ header {
   color: #475569;
 }
 
-/* ===============================
+/* 
    FEATURES
-================================ */
+*/
 
 .features {
   background-color: #f8fafc;
@@ -249,9 +268,9 @@ header {
   color: #475569;
 }
 
-/* ===============================
+/*
    BLOG
-================================ */
+*/
 
 .blog {
   max-width: 1200px;
@@ -269,7 +288,6 @@ header {
   margin-bottom: 2rem;
 }
 
-/* NEW: grid only for blog cards */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -285,9 +303,9 @@ header {
   margin-top: 0.25rem;
 }
 
-/* ===============================
+/* 
    FAQ
-================================ */
+*/
 
 .faq {
   background-color: #f1f5f9;
@@ -314,9 +332,9 @@ header {
   color: #475569;
 }
 
-/* ===============================
+/* 
    FOOTER
-================================ */
+*/
 
 footer {
   background-color: #e5e7eb;
@@ -341,8 +359,8 @@ footer > section {
   margin-bottom: 1.5rem;
 }
 
-.footer-links a,
-.footer-social a {
+.footer-links p,
+.footer-social p {
   display: block;
   margin-top: 0.25rem;
   color: #334155;
@@ -360,9 +378,13 @@ footer ul {
   margin: 0;
 }
 
-/* ===============================
+.icon {
+    text-align: left;
+  }
+
+/* 
    FOOTER SKIP LINK
-================================ */
+*/
 
 .skip-link-footer {
   position: absolute;
@@ -383,9 +405,9 @@ footer ul {
   z-index: 1000;
 }
 
-/* ===============================
+/* 
    RESPONSIVE
-================================ */
+*/
 
 @media (max-width: 768px) {
   .hero-content {
@@ -400,12 +422,15 @@ footer ul {
   .blog-card {
     grid-template-columns: 1fr;
   }
+  .icon {
+    text-align: center;
+  }
 }
 
 
-/* ===============================
+/* 
    CONTACT FORM
-================================ */
+*/
 
 fieldset {
   border: none;
@@ -464,11 +489,80 @@ textarea:focus {
 .form-row {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr; /* mobile default */
+  grid-template-columns: 1fr; /* mobile */
 }
 
 @media (min-width: 768px) {
   .form-row {
     grid-template-columns: 1fr 1fr; /* side-by-side */
+  }
+}
+
+/* 
+   DARK MODE
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --neutral-black: #F7FBFE;
+    --neutral-white: #0f1117;
+  }
+
+  header {
+    background-color: #0f1117;
+    border-bottom-color: #2a2a2a;
+  }
+
+  .features {
+    background-color: #1a1a2e;
+  }
+
+  .feature-card {
+    background-color: #16213e;
+    border-color: #2a2a2a;
+    color: #F7FBFE;
+  }
+
+  .feature-card p {
+    color: #a0aec0;
+  }
+
+  .video-card {
+    border-color: #2a2a2a;
+    color: #F7FBFE;
+  }
+
+  .video-card p {
+    color: #a0aec0;
+  }
+
+  .faq {
+    background-color: #1a1a2e;
+    color: #F7FBFE;
+  }
+
+  .faq-item p {
+    color: #a0aec0;
+  }
+
+  footer {
+    background-color: #16213e;
+    color: #F7FBFE;
+  }
+
+  footer p {
+    color: #a0aec0;
+  }
+
+  .blog-card small {
+    color: #a0aec0;
+  }
+
+  .nav-center a {
+    color: #a0aec0;
+  }
+
+  .button.primary {
+    color: #FFFFFF;
   }
 }

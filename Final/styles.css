@@ -1,6 +1,6 @@
-/* ===============================
+/* 
    RESET & BASE
-================================ */
+*/
 
 *,
 *::before,
@@ -23,8 +23,7 @@
 }
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif; /*system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",  */
   line-height: 1.5;
 }
 
@@ -40,8 +39,12 @@ img {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--primary-mid);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--primary-dark);
 }
 
 /* ===============================
@@ -61,6 +64,18 @@ a {
   color: var(--neutral-white); /*#fff;*/
   padding: 0.5rem 1rem;
   z-index: 1000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ===============================
@@ -114,6 +129,11 @@ header {
   gap: 1rem;
 }
 
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-left a {
   display: flex;
   align-items: center;
@@ -141,6 +161,12 @@ header {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.nav-right a[aria-current="page"] {
+  font-weight: 700;
+  border-bottom: 2px solid var(--secondary-mid);
+  padding-bottom: 2px;
 }
 
 .nav ul {
@@ -306,6 +332,10 @@ header {
   margin: 0 auto 1.5rem;
 }
 
+.faq-item:hover {
+  cursor: pointer;
+}
+
 .faq-item h4 {
   font-weight: 600;
   margin-bottom: 0.25rem;
@@ -313,6 +343,10 @@ header {
 
 .faq-item p {
   color: #475569;
+}
+
+.faq-item p:hover {
+  cursor: default;
 }
 
 /* ===============================
@@ -342,8 +376,8 @@ footer > section {
   margin-bottom: 1.5rem;
 }
 
-.footer-links a,
-.footer-social a {
+.footer-links p,
+.footer-social p {
   display: block;
   margin-top: 0.25rem;
   color: #334155;
@@ -359,6 +393,10 @@ footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.icon {
+  text-align: left;
 }
 
 /* ===============================
@@ -400,5 +438,78 @@ footer ul {
 
   .blog-card {
     grid-template-columns: 1fr;
+  }
+
+  .icon {
+    text-align: center;
+  }
+}
+
+/* ===============================
+   DARK MODE
+================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --neutral-black: #F7FBFE;
+    --neutral-white: #0f1117;
+  }
+
+  header {
+    background-color: #0f1117;
+    border-bottom-color: #2a2a2a;
+  }
+
+  .features {
+    background-color: #1a1a2e;
+  }
+
+  .feature-card {
+    background-color: #16213e;
+    border-color: #2a2a2a;
+    color: #F7FBFE;
+  }
+
+  .feature-card p {
+    color: #a0aec0;
+  }
+
+  .video-card {
+    border-color: #2a2a2a;
+    color: #F7FBFE;
+  }
+
+  .video-card p {
+    color: #a0aec0;
+  }
+
+  .faq {
+    background-color: #1a1a2e;
+    color: #F7FBFE;
+  }
+
+  .faq-item p {
+    color: #a0aec0;
+  }
+
+  footer {
+    background-color: #16213e;
+    color: #F7FBFE;
+  }
+
+  footer p {
+    color: #a0aec0;
+  }
+
+  .blog-card small {
+    color: #a0aec0;
+  }
+
+  .nav-center a {
+    color: #a0aec0;
+  }
+
+  p.button.primary {
+    color: #FFFFFF;
   }
 }

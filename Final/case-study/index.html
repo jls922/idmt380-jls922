@@ -3,111 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Case Study</title>
 </head>
-<body>
-    <div class="content">
-        <h1 class="page-title">Cookbook Case Study</h1>
-        <img class="casestudyhero" src="images/hero_casestudy.png" alt="hero image of the project">
-        
-        <h2 class="page-title">Overview</h2>
-        <p>For my Web Scripting II project, I turned a collection of 
-            recipe PDFs into a website with filters and a search bar
-            using PHP and MySQL. The goal was to move from static documents to a digital 
-            interface where it would enhance the user experience by allowing them to browse, update, 
-            and use it on different devices. The final product was a fully functioning recipe 
-            database developed in VSCode with PHP, MySQL, HTML, CSS, and JavaScript, 
-            and man aged through GitHub. It was also developed locally in MAMP with VS Code, 
-            and then deployed to Drexel’s hosting environment using Cyberduck and PHPmyAdmin.</p>
-    
-        <h2 class="page-title">Context and Challenge</h2>
-        <h3>Background: </h3>
-        <p>My final project for this class focuses on building a recipe website using MySQL and PHP. 
-            The project is an individual assignment and is part of a scripting course for web development.  
-            Over the course of 10 weeks, only three assignments helped 
-            in the production of my final project: Alpha, Beta, and Final Project</p>
-        <p>Developed on a zero-cost budget, the project aimed to give students practical experience with modern 
-            design concepts and back-end scripting. It met the course goals by handling user input, managing 
-            databases, and implementing advanced authentication. Throughout the project, I built a strong 
-            understanding of server-side programming and learned to apply modern development tools effectively.</p>
-        <h3>Problem: </h3>
-            <p>The original recipe PDFs made it difficult to quickly find content, browse categories, or 
-            search through all 37 recipes, and some were missing resources or context. 
-            With no filtering or querying capabilities, the assignment required building a backend system capable 
-            of organizing and retrieving the content dynamically. At the same time, the provided ZIP file of 
-            recipes was messy and overwhelming, filled with unstructured text, unoptimized images, and inconsistent 
-            formatting. It was a learning curve as this was my first time work with front-end development with PHP and MySQL for the 
-            especially with dozens of recipe pages within 10 weeks. Not only were there limitations of the original PDFs but 
-            also the challenge of learning server-side programming while managing a large volume of disorganized content.</p>
-        <h3>Goals & Objectives: </h3>
-            <p>The project required converting all recipe PDFs into structured digital data and storing them in 
-            a MySQL database capable of organizing categories, listing ingredients, and displaying recipe details. From there,
-             I needed to build a user-friendly front end that improved readability and accessibility while enabling fast
-              browsing and searching—features the original PDFs couldn’t offer. To support this functionality, I 
-              also created an API that delivered all recipe information in JSON format and hosted the final website 
-              publicly on Drexel’s servers.</p>
-        <h2 class="page-title">Process and Insight</h2>
-        <h3>Target Audience</h3>
-            <p>This project is designed for anyone who enjoys browsing online recipes, 
-                whether they’re new to cooking or seasoned in the kitchen. I aimed to 
-                create an simple, easy-to-use platform with straightforward features 
-                like a search bar and protein filters for smoother 
-                browsing.</p>
-        <h3>Database</h3>
-            <p>Because the original content were only in PDF format, each recipe's content was manually 
-                transcribed into a structured format on Google Sheets to organize the content into
-                the following categories:</p>
-            <ul>
-                <li>Recipe ID Number</li>
-                <li>Recipe Title</li>
-                <li>Recipe Subheading</li>
-                <li>Description</li>
-                <li>Ingredients List</li>
-                <li>Instruction Steps</li>
-                <li>Image File Names</li>
-                <li>Mobile Image File Names</li>
-                <li>Protein Tag</li>
-            </ul>
-            <p>The Google Sheets document was exported as a .csv file which was then imported into 
-                phpMyAdmin to test and modify fields as the data evolved locally on MAMP. 
-                I utilized asterisks in between each recipe steps to separate them 
-                with the PHP command “explode”.</p>
-            <img class="casestudyhero" src="images/database_casestudy.jpg" alt="Picture of Sheets Document and phpMyAdmin">
-            <h3>Development</h3>
-            <p>Before coding in PHP, I started with a template using HTML and CSS on VS Code to create my layout
-                and making it responsive. After that I converted the HTML files into PHP files. 
-                PHP was useful in repeated elements, like recipe cards and the contents within the recipe pages
-                making it much easier and quicker to create recipe pages and cards for as many recipes I can add to the database.</p>
-            <h3>Final Project</h3>
-                <p>To deploy my website, Cyberduck was used to upload the project to Drexel’s public server. 
-                    The MySQL database was exported from the localhost, and the SQL file was imported to Drexel's live hosting server through their 
-                    PHPmyAdmin.</p>
-            
-            <h2 class="page-title">The Solution</h2>
-            <h4>
-                <a href="https://vimeo.com/1145558694?share=copy&fl=sv&fe=ci" target="_blank">Screen Capture Video Link</a>
-            </h4>
-            <h4>
-                <a href="index.php" target="_blank">Live Project Link</a>
-            </h4>
-            <div class="vimeo-video" style="padding:53.18% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1145558694?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="idm232 final video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <p>The website lays out all the recipes from the database in a organized way. The filter and search bar are at the top
-                and displayed so that users can easily select a filter or reset the filter to catorgize the recipes or search for a certain recipe.
-                The website is responsive so that it is accessible and responsive on all devices.
-            </p>
 
-            <h2 class="page-title">The Results</h2>
-            <p>This 10-week project significantly expanded my understanding of full-stack development. I learned how to design 
-                and integrate a database from scratch, structure content for accessibility, and deploy a live site—skills 
-                I had no prior experience with. Working through data cleanup, PHP integration, and server hosting gave me 
-                a clearer sense of how dynamic web applications function behind the scenes.</p>
-            <p>The project also strengthened my time-management and project-planning abilities. Looking back, 
-                documenting feedback and following a more structured cycle of research, testing, and design would have 
-                made the process more efficient. Still, the experience proved how even simple content can benefit from 
-                intentional structure and thoughtful design, and it sparked a deeper curiosity about how data moves through 
-                a system—insight I’ll carry into future projects.</p>
-    </div>
+<body id="top">
+ 
+  <a class="skip-to-content" href="#main">Skip to content</a>
+ 
+  <!-- HEADER -->
+  <header>
+    <nav class="nav" aria-label="Primary Navigation">
+ 
+      <ul class="nav-left" aria-label="Brand">
+        <li aria-label="Audacity Home">
+          <a href="../index.html">
+            <img
+              src="../images/Audacity_Logo.DK8H7nvr.svg"
+              alt="Audacity logo"
+            />
+            Audacity
+          </a>
+        </li>
+      </ul>
+ 
+      <ul class="nav-right" aria-label="Main Navigation Links">
+        <li aria-label="About"><a href="../about.html">About</a></li>
+        <li aria-label="Contact Us"><a href="../contact.html">Contact</a></li>
+        <li aria-label="Case Study"><a href="case-study.html" aria-current="page">Case</a></li>
+      </ul>
+ 
+    </nav>
+  </header>
+ 
+  <!-- MAIN -->
+  <main id="main">
+ 
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <section class="hero-content">
+        <article class="hero-text">
+          <h1 id="hero-heading">Accessibility Case Study</h1>
+        </article>
+      </section>
+    </section>
+ 
+    <!-- HERO IMAGE -->
+    <section class="case-hero-image" aria-label="Case Study Hero Image">
+      <figure>
+        <img
+          src="images/hero_casestudy.png"
+          alt="Hero image of the Audacity accessibility project"
+        />
+      </figure>
+    </section>
+ 
+    <!-- OVERVIEW -->
+    <section class="case-section" aria-labelledby="overview-heading">
+      <article class="case-card case-card--full">
+        <h2 id="overview-heading">Overview</h2>
+        <p>
+          For my Web Accessibility project, I turned the website of the audio software
+          Audacity into an accessible website using HTML, CSS, and JavaScript. The goal
+          was to take a preexisting website and revise the code to enhance the user
+          experience by incorporating ARIA labels, replacing div tags with meaningful
+          semantic tags, and making text readable or readable via text-to-speech. The
+          final product was a fully functioning accessible website developed in VSCode
+          with HTML, CSS, and JavaScript, and managed through GitHub where it was linked
+          to Netlify to host.
+        </p>
+      </article>
+    </section>
+ 
+    <!-- CONTEXT AND CHALLENGE -->
+    <section class="case-section case-section--alt" aria-labelledby="context-heading">
+      <h2 id="context-heading" class="case-section-title">Context and Challenge</h2>
+ 
+      <section class="case-grid" aria-label="Context and Challenge Details">
+ 
+        <article class="case-card" aria-labelledby="background-heading">
+          <h3 id="background-heading">Background</h3>
+          <p>
+            My final project for this class focuses on building an accessible website
+            using HTML, CSS, and JavaScript. The project is an individual assignment and
+            is part of an accessibility scripting course for web development. Over the
+            course of 10 weeks, the assignments helped in the production of my final
+            project covering Color Palette, Web Accessible Typography, Custom Tab
+            (tabindex) Order, Semantic HTML, and Web Accessible Forms which all leads up
+            to the final project.
+          </p>
+          <p>
+            Developed on a zero-cost budget, the project aimed to give students
+            practical experience with modern design concepts and front-end scripting. It
+            met the course goals of creating a web accessible website. Throughout the
+            project, I built a strong understanding of web accessibility in scripting.
+          </p>
+        </article>
+ 
+        <article class="case-card" aria-labelledby="problem-heading">
+          <h3 id="problem-heading">Problem</h3>
+          <p>
+            The original website wasn't fully accessible and I had to work with what I
+            could get from saving the website as an HTML in my browser. The downloaded code
+            was not clean and was very messy. I used AI to help clean up the code to
+            give me a good clean base to work from. After that, I was able to work on
+            making the website accessible as I learned how to script for accessibility
+            for the first time.
+          </p>
+        </article>
+ 
+        <article class="case-card" aria-labelledby="goals-heading">
+          <h3 id="goals-heading">Goals &amp; Objectives</h3>
+          <p>
+            The project required a preexisting website that could be revised to be
+            accessible. I needed to build a user-friendly front end that improved
+            the readability and accessibility while staying similar to the original website.
+            I had to replace divs and spans with tags that are relevant to each element,
+            where I also added ARIA labels allowing accessibility tools like
+            text-to-speech to help users with disabilities. To meet the requirements of the course, 
+            took concepts of different pages in original website to create a page fitting of the course 
+            like the Contact page and About page for example. Both were originally Forum and FAQ pages respectively 
+            but were edited so I can have a Contact Form and an About page.
+          </p>
+        </article>
+ 
+      </section>
+    </section>
+ 
+    <!-- PROCESS AND INSIGHT -->
+    <section class="case-section" aria-labelledby="process-heading">
+      <h2 id="process-heading" class="case-section-title">Process and Insight</h2>
+ 
+      <section class="case-grid" aria-label="Process and Insight Details">
+ 
+        <article class="case-card" aria-labelledby="audience-heading">
+          <h3 id="audience-heading">Target Audience</h3>
+          <p>
+            This project is designed for people with disabilities. I aimed to create a
+            simple, easy-to-use interface with straightforward functions that are
+            accessible for all users.
+          </p>
+        </article>
+ 
+        <article class="case-card case-card--media" aria-labelledby="color-heading">
+          <h3 id="color-heading">Color &amp; Contrast</h3>
+          <figure>
+            <img
+              src="images/color_robust.png"
+              alt="Color palette used in the project showing accessible color combinations"
+            />
+          </figure>
+          <figure>
+            <img
+              src="images/color_contrast_options.png"
+              alt="Color contrast options chart showing which combinations are suitable for text, UI components, or decoration only"
+            />
+          </figure>
+          <p>
+            One of the first assignments was to create a color palette from the original
+            website and verify good contrast ratios. We also had to check which
+            combination of colors is best for which occasion; whether it is suitable
+            for text, for UI components, or if it has low contrast and is only acceptable
+            for decorative elements.
+          </p>
+        </article>
+ 
+        <article class="case-card case-card--media" aria-labelledby="code-heading">
+          <h3 id="code-heading">Code / Dev</h3>
+          <figure>
+            <img
+              src="images/code_section.png"
+              alt="Screenshot of semantic HTML code from the contact page showing sections and articles instead of divs"
+            />
+          </figure>
+          <p>
+            Here is an example of how I implemented semantic HTML into my code, showing
+            the contact page. Instead of using divs and spans, I used sections and
+            articles. This helps the screen reader identify out loud what each element
+            is on the web page.
+          </p>
+        </article>
+ 
+      </section>
+    </section>
+ 
+    <!-- THE SOLUTION -->
+    <section class="case-section case-section--alt" aria-labelledby="solution-heading">
+      <h2 id="solution-heading" class="case-section-title">The Solution</h2>
+ 
+      <section class="case-grid" aria-label="Solution Links and Demo">
+ 
+        <article class="case-card" aria-labelledby="links-heading">
+          <h3 id="links-heading">Project Links</h3>
+          <ul aria-label="External project links">
+            <li>
+              <a
+                href="https://vimeo.com/1172797053?share=copy&fl=sv&fe=ci"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Screen capture video link (opens in new tab)"
+              >
+                Screen Capture Video
+              </a>
+            </li>
+            <li>
+              <a
+                href="index.html"
+                aria-label="Live project link"
+              >
+                Live Project
+              </a>
+            </li>
+          </ul>
+        </article>
+ 
+        <article class="case-card case-card--video" aria-labelledby="demo-heading">
+          <h3 id="demo-heading">Project Demo</h3>
+          <figure class="video-wrapper" aria-label="Embedded demo video of the Audacity accessibility project">
+            <iframe
+              src="https://player.vimeo.com/video/1172797053?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="IDM T380 Scripting for Accessibility Final"
+            ></iframe>
+          </figure>
+          <p>
+            The website demonstrates all forms of web accessibility covered in the course in a website for the Audacity software.
+            The video shows all the accessible features scripted in the website.
+            The website is responsive so that it is accessible and responsive on all devices.
+          </p>
+        </article>
+ 
+      </section>
+    </section>
+ 
+    <!-- THE RESULTS -->
+    <section class="case-section" aria-labelledby="results-heading">
+      <article class="case-card case-card--full">
+        <h2 id="results-heading">The Results</h2>
+        <p>
+            This 10-week project significantly expanded my understanding of web accessibility and scripting for accessibility. 
+            I learned how to design and accommodate accessible features for users with disabilities 
+            with no prior experience with scripting for accessibility.
+        </p>
+        <p>
+            The project also strengthened my time-management and project-planning abilities. Looking back, 
+            documenting feedback and following a more structured cycle of research, 
+            testing, and design would have made the process more efficient. 
+            Still, the experience proved how small details we don't think about could affect someone
+            with disabilities. I hope to carry these skills into future projects as I work on more websites 
+            and benefit my websites and my future clients' websites. I hope to see what I could bring to my last co-op 
+            since their target audience is older adults who most have poorer eyesight and other disabilities.
+        </p>
+      </article>
+    </section>
+ 
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer aria-label="Footer">
+ 
+    <section class="footer-first">
+      <p class="footer-text">
+        Free, open-source audio editor for Windows, macOS, and Linux.
+      </p>
+    </section>
+ 
+    <section aria-label="Footer Navigation">
+ 
+      <ul aria-label="Return to Top">
+        <li aria-label="Skip to top link">
+          <a href="#top" class="skip-link-footer">Skip to top</a>
+        </li>
+      </ul>
+ 
+      <ul aria-label="Social Media Links">
+        <li aria-label="GitHub"><a class="icon" href="#">GitHub</a></li>
+        <li aria-label="Discord"><a class="icon" href="#">Discord</a></li>
+        <li aria-label="YouTube"><a class="icon" href="#">YouTube</a></li>
+      </ul>
+ 
+    </section>
+ 
+    <p class="copyright">
+      © 2026 Muse Group &amp; contributors
+    </p>
+ 
+  </footer>
+ 
+  <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>

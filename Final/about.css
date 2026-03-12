@@ -1,6 +1,6 @@
-/* ===============================
+/* 
    RESET & BASE
-================================ */
+*/
 
 *,
 *::before,
@@ -36,7 +36,6 @@ body {
 img {
   max-width: 100%;
   display: block;
-  border-radius: 0.5rem;
 }
 
 a {
@@ -48,9 +47,9 @@ a:hover {
   color: var(--primary-dark);
 }
 
-/* ===============================
+/* 
    UTILITY
-================================ */
+*/
 
 .visually-hidden {
   position: absolute;
@@ -79,9 +78,9 @@ a:hover {
   z-index: 1000;
 }
 
-/* ===============================
+/*
    BUTTONS & LINKS
-================================ */
+*/
 
 .button {
   display: inline-block;
@@ -98,12 +97,13 @@ a:hover {
 }
 
 .button.primary:hover {
+  background-color: var(--primary-dark);
   transform: translateY(-1px);
 }
 
-/* ===============================
+/* 
    HEADER / NAV
-================================ */
+*/
 
 header {
   position: sticky;
@@ -162,9 +162,9 @@ header {
   margin: 0;
 }
 
-/* ===============================
+/* 
    HERO
-================================ */
+*/
 
 .hero {
   background: linear-gradient(90deg, #1e3a8a, #2563eb);
@@ -189,48 +189,16 @@ header {
   opacity: 0.9;
 }
 
-/* ===============================
-   HERO IMAGE
-================================ */
+/* 
+   ABOUT CARDS SECTION
+*/
 
-.case-hero-image {
+.about-section {
   background-color: #f8fafc;
-  padding: 3rem 1rem;
-}
-
-.case-hero-image figure {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.case-hero-image img {
-  width: 100%;
-  border-radius: 1rem;
-  border: 1px solid #e5e7eb;
-}
-
-/* ===============================
-   CASE STUDY SECTIONS
-================================ */
-
-.case-section {
   padding: 4rem 1rem;
 }
 
-.case-section--alt {
-  background-color: #f8fafc;
-}
-
-.case-section-title {
-  font-size: 2rem;
-  color: var(--primary-dark);
-  margin-bottom: 2.5rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.case-grid {
+.about-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -238,89 +206,121 @@ header {
   gap: 2rem;
 }
 
-/* ===============================
-   CASE CARDS
-================================ */
-
-.case-card {
+.about-card {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.75rem;
   border: 1px solid #e5e7eb;
 }
 
-.case-card--full {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.case-card--media figure {
-  margin-bottom: 1rem;
-}
-
-.case-card--media img {
-  width: 100%;
-  margin-bottom: 0.75rem;
-}
-
-.case-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--primary-dark);
-}
-
-.case-card h3 {
-  font-size: 1.1rem;
+.about-card h2 {
+  font-size: 1.25rem;
   margin-bottom: 0.75rem;
   color: var(--primary-dark);
 }
 
-.case-card p {
+.about-card p {
   color: #475569;
   margin-bottom: 0.75rem;
 }
 
-.case-card p:last-child {
+.about-card p:last-child {
   margin-bottom: 0;
 }
 
-.case-card ul {
+.about-card ul {
+  margin: 0.75rem 0 0.75rem 1.25rem;
+  color: #475569;
+}
+
+.about-card ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* 
+   FEATURES FAQ SECTION
+*/
+
+.features-faq {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.features-faq > h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: var(--primary-dark);
+}
+
+.faq-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.faq-card {
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.faq-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+}
+
+.faq-card p {
+  color: #475569;
+  margin-bottom: 0.75rem;
+}
+
+.faq-card p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-card ul {
   margin: 0.5rem 0 0.75rem 1.25rem;
   color: #475569;
 }
 
-.case-card ul li {
-  margin-bottom: 0.5rem;
+.faq-card ul li {
+  margin-bottom: 0.4rem;
 }
 
-/* ===============================
-   VIDEO EMBED
-================================ */
+/* 
+   TEAM SECTION
+*/
 
-.case-card--video {
-  grid-column: span 2;
+.team-section {
+  background-color: #f1f5f9;
+  padding: 4rem 1rem;
 }
 
-.video-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* 16:9 ratio */
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
+.team-section > h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: var(--primary-dark);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
+.team-section .faq-group {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* ===============================
+.team-section .faq-card {
+  background-color: #ffffff;
+}
+
+/* 
    FOOTER
-================================ */
+*/
 
 footer {
   background-color: #e5e7eb;
@@ -355,9 +355,9 @@ footer a {
   text-align: left;
 }
 
-/* ===============================
+/*
    FOOTER SKIP LINK
-================================ */
+*/
 
 .skip-link-footer {
   position: absolute;
@@ -378,21 +378,18 @@ footer a {
   z-index: 1000;
 }
 
-/* ===============================
+/* 
    RESPONSIVE
-================================ */
+*/
 
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 1.75rem;
   }
 
-  .case-grid {
+  .about-grid,
+  .faq-group {
     grid-template-columns: 1fr;
-  }
-
-  .case-card--video {
-    grid-column: span 1;
   }
 
   .nav-right {
@@ -404,9 +401,9 @@ footer a {
   }
 }
 
-/* ===============================
+/* 
    DARK MODE
-================================ */
+*/
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -419,35 +416,52 @@ footer a {
     border-bottom-color: #2a2a2a;
   }
 
-  .case-hero-image {
+  .about-section {
     background-color: #1a1a2e;
   }
 
-  .case-hero-image img {
-    border-color: #2a2a2a;
-  }
-
-  .case-section--alt {
-    background-color: #1a1a2e;
-  }
-
-  .case-section-title {
-    color: var(--primary-light);
-  }
-
-  .case-card {
+  .about-card {
     background-color: #16213e;
     border-color: #2a2a2a;
   }
 
-  .case-card h2,
-  .case-card h3 {
+  .about-card h2 {
     color: var(--primary-light);
   }
 
-  .case-card p,
-  .case-card ul {
+  .about-card p,
+  .about-card ul {
     color: #a0aec0;
+  }
+
+  .features-faq > h2 {
+    color: var(--primary-light);
+  }
+
+  .faq-card {
+    background-color: #16213e;
+    border-color: #2a2a2a;
+  }
+
+  .faq-card h3 {
+    color: var(--primary-light);
+  }
+
+  .faq-card p,
+  .faq-card ul {
+    color: #a0aec0;
+  }
+
+  .team-section {
+    background-color: #1a1a2e;
+  }
+
+  .team-section > h2 {
+    color: var(--primary-light);
+  }
+
+  .team-section .faq-card {
+    background-color: #0f1117;
   }
 
   footer {
