@@ -322,6 +322,7 @@ header {
 footer {
   background-color: #e5e7eb;
   padding: 3rem 1rem;
+  position: relative;
 }
 
 footer > div {
@@ -376,7 +377,7 @@ footer ul {
 
 .skip-link-footer:focus {
   left: 1rem;
-  bottom: 1rem;
+  top: 1rem;
   outline: 3px solid var(--secondary-mid);
   outline-offset: 2px;
   position: absolute;
