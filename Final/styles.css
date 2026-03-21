@@ -140,6 +140,8 @@ header {
   gap: 0.5rem;
   font-weight: 700;
   font-size: 1.125rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-left img {
@@ -161,6 +163,12 @@ header {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.95rem;
 }
 
 .nav-right a[aria-current="page"] {
@@ -512,4 +520,8 @@ footer ul {
   p.button.primary {
     color: #FFFFFF;
   }
+
+  .skip-link-footer {
+  color: var(--neutral-black);
+}
 }
